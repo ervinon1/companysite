@@ -1,0 +1,208 @@
+html {
+    background-image: url(background.jpg);
+    background-size: cover;
+    font-family: monospace;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+@media only screen and (max-width: 840px)
+{
+    .header ul {
+        flex-flow: column ;
+        
+    }
+    .header li  {
+        margin-bottom: 5%;
+    }
+
+    .staff {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .staff img {
+        display: none;
+    }
+}
+
+
+
+.header {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+}
+
+
+.header h1 {
+    font-size: 60px;
+    color: ghostwhite;
+}
+
+.header ul {
+    list-style: none; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list a {
+    text-decoration: none;
+    color: antiquewhite;
+    flex-wrap: wrap;
+}
+
+li:hover {
+    background-color: navy;
+    cursor: pointer;
+}
+
+.list {
+    font-size: xx-large;
+    text-decoration: none;
+    display: inline;
+    margin: 0 5%;
+    border: 1px rgb(232, 226, 214) solid;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote h1 {
+    position:relative;
+    color: azure;
+    text-align: center;
+    margin-top: 10%;
+    border-top: 2px snow solid;
+    border-bottom: 2px snow solid;
+    padding: 5%;
+    width: 100%;
+    background-color: hsla(244, 93%, 37%, 0.3);
+}
+
+.mission {
+    display: flex;
+    margin-top: 5%;
+    padding-bottom: 7.5%;
+    border-bottom: 1px white solid;
+}
+
+.mission p {
+    color: whitesmoke;
+    font-size: x-large;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+}
+
+.products {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+}
+
+.products .image {
+    border: 2px navy solid;
+    border-radius: 10px;
+    width: 28rem;
+    flex-wrap: wrap;
+    margin-left: 0.7em;
+    background-color: hsla(240, 100%, 25%, 0.4);
+    margin-bottom: 5%;
+}
+
+.image:hover {
+    background-color: hsla(240, 100%, 25%, 1);
+}
+
+
+
+.products .image img {
+    width: inherit;
+    border: 2px navy solid;
+    
+    border-radius: 10px;
+}
+
+.products h3,p {
+    color: aliceblue;
+    text-align: center;
+}
+
+.products h3 {
+    font-size: xx-large;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+}
+
+.products p {
+    font-size: large;
+}
+
+.staff {
+    display: flex;
+    height: 30rem;
+    background-color: hsla(240, 48%, 48%, 0.1);
+    border-bottom: 1px navy solid ;
+    border-top: 1px navy solid ;
+    align-items: center;
+}
+
+.staff img {
+    height: inherit;
+    border-radius: 10px;
+}
+
+.john img {
+    justify-self: flex-end;
+}
+
+.michael img {
+    justify-content: flex-end;
+}
+
+.staff .content {
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: x-large;
+}
+
+.staff .content h3 {
+    color: floralwhite;
+    font-size:3.5rem;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    height: 30rem;
+    background-color: hsla(0, 0%, 0%, 0.9);
+}
+
+.footer .content {
+    text-align: center;
+    color: aliceblue;
+    font-size: x-large;
+}
+
+span {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+    font-size: 1.1em;
+}
